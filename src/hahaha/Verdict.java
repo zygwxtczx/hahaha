@@ -6,7 +6,7 @@ package hahaha;
 
 /**
  *
- * @author 350265287
+ * @author 350265287fg
  */
 public class Verdict {
     private String caseName;

@@ -14,7 +14,6 @@ public class Verdict {
     private String reason;
 
     public Verdict() {}
-
     public Verdict(String caseName, String studentVerdict, String reason) {
         this.caseName = caseName;
         this.studentVerdict = studentVerdict;

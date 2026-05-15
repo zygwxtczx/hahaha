@@ -12,25 +12,38 @@ public class EthicsCase {
     private String caseTitle;
     private String description;
     private String category;
-    public Verdict verdict;
-    
-    public EthicsCase(String caseTitle, String description, String category){
-        this.caseTitle = caseTitle; 
+    private Verdict verdict;
+
+    public EthicsCase(String caseTitle, String description, String category) {
+        this.caseTitle = caseTitle;
+        this.description = description;
+        this.category = category;
+        this.verdict = new Verdict();
     }
-    
-    public String getCaseTitle(){
-        return "hahaha";
+
+    public String getCaseTitle() {
+        return caseTitle;
     }
-    
-    public String getCaseDescription(){
-        return "hahaha";
+
+    public String getCaseDescription() {
+        return description;
     }
-    
-    public String getCategory(){
-        return "hahaha";
+
+    public String getCategory() {
+        return category;
     }
-    public String toString(){
-        return "hahaha";
-        
+
+    public Verdict getVerdict() {
+        return verdict;
+    }
+
+    public void setVerdict(Verdict verdict) {
+        this.verdict = verdict;
+    }
+
+    @Override
+    public String toString() {
+        return "EthicsCase" +"caseTitle=" + caseTitle +   ", description=" + description  +", category=" + category  +", verdict=" + verdict;
     }
 }
+

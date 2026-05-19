@@ -4,19 +4,51 @@
  */
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import hahaha.EthicsCase;
+import myPackage.PrivacyCase;
+import myPackage.AlgorithmCase;
+import myPackage.MisinformationCase;
+import myPackage.IntellectualPropertyCase;
 /**
  *
  * @author 350333092
  */
 public class MainPage extends javax.swing.JFrame {
     public static EthicsCase[] cases = new EthicsCase[8];
-    
-    cases[0] = new PrivacyCase(
+    public MainPage() {
+        cases[0] = new PrivacyCase(
             "The Always-On Microphone", 
             "A smart speaker company recorded household conversations even when the device was not activated. Employees reviewed the recordings.", 
-            "Audio Recordings"
-        );
+            "Audio Recordings");
+        cases[1] = new PrivacyCase(
+            "The Always-On Microphone", 
+            "A smart speaker company recorded household conversations even when the device was not activated. Employees reviewed the recordings.", 
+            "Audio Recordings");
+        cases[2] = new AlgorithmCase(
+            "The Biased Hiring Bot", 
+            "A tech company's AI screening tool ranked male applicants higher than equally qualified female applicants.", 
+            "gender bias");
+        cases[3] = new AlgorithmCase(
+            "The Always-On Microphone", 
+            "A smart speaker company recorded household conversations even when the device was not activated. Employees reviewed the recordings.", 
+            "Audio Recordings");
+        cases[4] = new MisinformationCase(
+            "The Deepfake Politician", 
+            "A deepfake video of a candidate saying things they never said spread widely online during an election before being identified as fake.", 
+            "deepfake video");
+        cases[5] = new MisinformationCase(
+            "The Always-On Microphone", 
+            "A smart speaker company recorded household conversations even when the device was not activated. Employees reviewed the recordings.", 
+            "Audio Recordings");
+        cases[6] = new IntellectualPropertyCase(
+            "AI Trained on Artist Work", 
+            "An AI image generator was trained on millions of artworks scraped without permission. Artists receive no credit or payment.", 
+            "AI-generated art");
+        cases[7] = new IntellectualPropertyCase(
+            "The Always-On Microphone", 
+            "A smart speaker company recorded household conversations even when the device was not activated. Employees reviewed the recordings.", 
+            "Audio Recordings");
+    }
 
     
     /**

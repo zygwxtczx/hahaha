@@ -24,7 +24,8 @@ public class scenario1 extends javax.swing.JFrame {
                 System.out.println("JFrame is now focused!");
                 //add code here
                 jLabel2.setText(cases[0].getCaseTitle);
-                jTextArea.setText(cases[0].getCaseDescription);
+                jTextArea1.setText(cases[0].getCaseDescription);
+            }
         });
 
     }
